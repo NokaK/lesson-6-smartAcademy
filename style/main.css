@@ -1,0 +1,44 @@
+.text {
+	width: 500px;
+	display: inline-block;
+	/*font-size: 30px;*/
+	/*font-family: 'Ballet';*/
+	background-color: pink;
+	margin: 10px;
+}
+/*.text::first-letter{
+	font-size: 40px;
+}*/
+.text:before {
+	content: "";
+	width: 100px;
+	height: 3px;
+	background-color: black;
+	border-radius: 10px;
+	display: block;
+	margin: 0 auto;
+	/*margin: 10px 30px 15px 20px;*/
+	/*margin-top: 10px;
+	margin-right: 30px;
+	margin-bottom: 15px;
+	margin-left:20px;*/
+}
+.text:after {
+	content: "";
+	width: 1px;
+	height: 15px;
+	background-color: aqua;
+	border-radius: 10px;
+	display: block;
+	margin: 0 auto;
+}
+.text:nth-child(2n) {
+	width: 400px;
+	background-color: green;
+}
+.text:last-child {
+	background-color: red;
+}
+/*.green {
+	background-color: green;
+}*/
